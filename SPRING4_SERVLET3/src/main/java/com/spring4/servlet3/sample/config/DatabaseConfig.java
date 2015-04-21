@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class DatabaseConfig {
 	
-	@Profile({ "local", "dev", "stg" })
+	//@Profile({ "local", "dev", "stg" })
     static class Local {
 		
 		@Autowired Environment env;
@@ -62,7 +62,7 @@ public class DatabaseConfig {
         }
     }
 
-    @Profile({ "prod" })
+    /*@Profile({ "prod" })
     @Resource(name="jdbc/MyDB")
     static class Prod {
         @Bean
@@ -73,7 +73,7 @@ public class DatabaseConfig {
     		return dataSource;
         }
     }
-
+*/
 	@Bean 
 	@Autowired
 	public DataSourceTransactionManager txManager(DataSource dataSource){

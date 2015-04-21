@@ -1,4 +1,4 @@
-package com.spring4.servlet3.sample.auth.service;
+/*package com.spring4.servlet3.sample.auth.service;
 
 import java.util.Date;
 
@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache.ValueWrapper;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.spring4.servlet3.sample.common.abs.AbstractBaseService;
-import com.spring4.servlet3.sample.common.util.MD5Generator;
 
-//@Service("authService")
+@Service("authService")
 public class AuthServiceImpl extends AbstractBaseService<AuthServiceImpl>
 		implements AuthService {
 	
@@ -28,7 +28,7 @@ public class AuthServiceImpl extends AbstractBaseService<AuthServiceImpl>
 	}
 
 	@Override
-//	@Cacheable(value = "authCache", key = "#key")
+	@Cacheable(value = "authCache", key = "#key")
 	public DBObject getAuthInfo(String key) throws Exception {
 		DBObject r = null;
 		ValueWrapper auth = cacheManager.getCache("authCache").get(key);
@@ -125,3 +125,4 @@ public class AuthServiceImpl extends AbstractBaseService<AuthServiceImpl>
 	}
 
 }
+*/

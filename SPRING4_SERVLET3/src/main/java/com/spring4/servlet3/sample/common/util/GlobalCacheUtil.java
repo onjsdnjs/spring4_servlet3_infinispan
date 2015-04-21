@@ -1,4 +1,4 @@
-package com.spring4.servlet3.sample.common.util;
+/*package com.spring4.servlet3.sample.common.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
@@ -34,3 +34,4 @@ public class GlobalCacheUtil {
 		cacheManager.getCache(cacheName).evict(key);
 	}
 }
+*/
