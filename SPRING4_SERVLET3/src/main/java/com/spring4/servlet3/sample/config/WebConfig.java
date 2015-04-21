@@ -44,7 +44,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		Charset s = Charset.forName("UTF-8");
 		converters.add(new StringHttpMessageConverter(s));
     }
-	
 
 	@Bean
 	public LocaleResolver localeResolver() {

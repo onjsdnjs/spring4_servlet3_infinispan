@@ -1,4 +1,4 @@
-package com.spring4.servlet3.sample.config;
+/*package com.spring4.servlet3.sample.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -7,7 +7,7 @@ import org.springframework.core.env.Environment;
 
 import com.spring4.servlet3.sample.common.mongo.MongoTemplate;
 
-/**
+*//**
  * <PRE>
  * 1. FileName	:	MongoConfig.java
  * 2. Comment	:	init MongoTemplate
@@ -15,7 +15,7 @@ import com.spring4.servlet3.sample.common.mongo.MongoTemplate;
  * 4. 작성일		:	2013. 7. 31.	오후 11:42:57
  * </PRE>
  *
- */
+ *//*
 @Configuration
 public class MongoConfig {
 	
@@ -38,3 +38,4 @@ public class MongoConfig {
         		);
     }
 }
+*/

@@ -5,6 +5,7 @@ import org.bson.BasicBSONObject;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
 
+@SuppressWarnings("serial")
 public class AbstractBaseEntity extends BasicBSONObject implements DBObject{
 
     protected boolean _isPartialObject;

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="Test" >
-	<select id="selectTestList" parameterType="DBObject" resultType="DBObject">
+	<!-- <select id="selectTestList" parameterType="DBObject" resultType="DBObject">
 		SELECT GM_CODE AS GAME_CODE,GM_NAME AS GAME_NAME
 		FROM tb_game
 	</select>
@@ -23,5 +23,5 @@
 		update TEST set
 		test = #{test}
 		where id = #{id}
-	</update>
+	</update> -->
 </mapper>

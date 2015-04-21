@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sp4.servlet3.sample</groupId>
-  <artifactId>SERVLET3</artifactId>
+  <artifactId>WHOCAN</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>SPRING4_SERVLET3</name>
+  <name>WHOCAN</name>
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
@@ -71,18 +71,6 @@
 			<version>0.99</version>
 		</dependency>
 		
-		<!-- Infinispan -->
-		<dependency>
-			<groupId>org.infinispan</groupId>
-			<artifactId>infinispan-client-hotrod</artifactId>
-			<version>${infinispan.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.infinispan</groupId>
-			<artifactId>infinispan-spring4</artifactId>
-			<version>${infinispan.version}</version>
-		</dependency>
-		
 		<!-- common lib -->
 		<dependency>
 		    <groupId>commons-io</groupId>
@@ -125,13 +113,6 @@
 			<version>1.7.2</version>
 		</dependency>
         
-        <!-- Sitemesh -->
-		<dependency>
-			<groupId>opensymphony</groupId>
-			<artifactId>sitemesh</artifactId>
-			<version>2.4.2</version>
-		</dependency>
-				
 		<!-- TEST -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -145,12 +126,6 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- postgresql driver -->
-        <dependency>
-			<groupId>postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.1-901.jdbc4</version>
-		</dependency>
         
         <dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
@@ -190,7 +165,7 @@
 
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
+				<artifactId>tomcat8-maven-plugin</artifactId>
 				<configuration>
 					<!-- <path>/${project.artifactId}</path> -->
 					<path>/</path>
@@ -203,7 +178,7 @@
 			<plugins>
 				<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
+					<artifactId>tomcat8-maven-plugin</artifactId>
 					<version>2.0</version>
 				</plugin>
 			</plugins>
